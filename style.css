@@ -1,0 +1,173 @@
+body {
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #F4AFAB;
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    display: grid;
+    grid-template-rows: 100px 300px 130px;
+    padding: 20px;
+}
+
+.nav-logo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.nav-logo img {
+    max-width: 100%;
+    min-width: 70px;      
+    max-height: 100%;
+    min-height: 70px;     
+    object-fit: contain;  
+    grid-column: 1 / 2;   
+}
+
+.nav-logo h1 {
+    margin-top: 0px;
+    grid-column: 2 / 3;
+}
+
+.nav-options {
+    display: grid;
+    gap: 8px;
+    grid-template-rows: repeat(7, 36px);
+}
+
+.nav-item {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+.nav-item img {
+    width: 100%;
+    min-width: 35px;
+    height: 100%;
+    min-height: 35px;
+    grid-column: 1 / 2;
+}
+
+.nav-item h2 {
+    margin: 0px;
+    grid-column: 2 / 6;
+    color: white;
+}
+
+.nav-support {
+    display: grid;
+    grid-template-rows: repeat(3, 36px);
+    gap: 8px;
+}
+
+.header {
+    background-color: white;
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+}
+
+.content {
+    background-color: #F7EDF0;
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
+    display: grid;
+    grid-template-columns: 4.5fr 4.5fr 3fr;
+    grid-template-rows: 10fr 10fr 1fr;
+}
+
+.projects {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    padding: 20px;
+}
+
+.projects h2 {
+    margin-top: 0px;
+}
+
+.all-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 150px);
+}
+
+.project {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    border-left: 5px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 8px;
+}
+
+.project h3 {
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+    margin: 0px;
+    align-self: end;
+    font-size: 16px;
+
+}
+
+.project p {
+    grid-column: 1 / 8;
+    grid-row: 2 / 4;
+    margin: 0px;
+    align-self: start;
+    font-size: clamp(10px, 1vw + 1vh, 14px); /* Dynamically adjusts font size */
+
+}
+
+.project img {
+    align-self: center;
+    justify-self: center;
+    height: 20px;
+    width: 20px;
+}
+
+.favourite {
+    grid-row: 4 / 5;
+    grid-column: 5 / 6;
+}
+
+.flag {
+    grid-row: 5 / 4;
+    grid-column: 6 / 7;
+
+}
+
+.share {
+    grid-row: 4 / 5;
+    grid-column: 7 / 8;
+
+}
+
+.announcements {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.trending {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
