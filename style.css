@@ -129,7 +129,7 @@ body {
     grid-row: 2 / 4;
     margin: 0px;
     align-self: start;
-    font-size: clamp(10px, 1vw + 1vh, 14px); /* Dynamically adjusts font size */
+    font-size: 14px;
 
 }
 
