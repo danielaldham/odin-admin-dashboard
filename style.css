@@ -38,6 +38,7 @@ body {
 .nav-logo h1 {
     margin-top: 0px;
     grid-column: 2 / 3;
+    color: #403F4C;
 }
 
 .nav-options {
@@ -81,7 +82,60 @@ body {
     grid-template-rows: 2fr 3fr;
 }
 
+.top {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-rows: 60px;
+}
 
+.icon {
+    object-fit: contain; /* Ensure the image retains its aspect ratio */
+    align-self: center;
+    justify-self: end;
+}
+
+.icon img{
+    height: 30px;
+    width: 30px;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    margin: 15px;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.alarm {
+    object-fit: contain; /* Ensure the image retains its aspect ratio */
+    align-self: center;
+    justify-self: center;
+}
+
+.alarm img{
+    height: 30px;
+    width: 30px;
+}
+
+.prof-pic {
+    height: 50px;
+    width: 50px;
+    object-fit: contain; /* Ensure the image retains its aspect ratio */
+    align-self: center;
+    justify-self: center;
+}
+
+.prof-pic img{
+    height: 50px;
+    width: 50px;
+}
+
+.top .username {
+    align-content: center;
+}
 
 .content {
     background-color: #F7EDF0;
@@ -126,6 +180,7 @@ body {
     margin: 0px;
     align-self: end;
     font-size: 16px;
+    color: #403F4C;
 }
 
 .project p {
@@ -185,6 +240,7 @@ body {
 .ann h4 {
     margin: 0px;
     font-size: 12px;
+    color: #403F4C;
 }
 
 .ann p {
@@ -197,7 +253,6 @@ body {
     height: 1px;
     width: 70%;
     background-color: grey; /* Define color of the line */
-
 }
 
 .trending {
@@ -220,9 +275,47 @@ body {
 
 .trending h2 {
     margin-top: 0px;
+    color: #403F4C;
+}
+
+.trend {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.trend .prof-pic {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    height: 40px;
+    width: 40px;
+}
+
+.trend .username {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    align-self: end;
+    margin-bottom: 2px;
+}
+
+.trend .desc {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.trend p {
+    margin: 0px;
+    font-size: 12px;
+    color: #403F4C;
 }
 
 .footer {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
+}
+
+.footer a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: #4A6670;
 }
