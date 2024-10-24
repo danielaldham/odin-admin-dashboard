@@ -255,7 +255,7 @@ body {
 }
 
 .flag {
-    grid-row: 5 / 4;
+    grid-row: 4 / 5;
     grid-column: 6 / 7;
 
 }
